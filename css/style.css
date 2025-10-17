@@ -13,7 +13,7 @@
 }
 body{
     min-height: 100vh;
-    background-color: var(--background);
+    background: var(--background);
 }
 nav{
     position: fixed;
@@ -74,4 +74,117 @@ span{
     color: white;
     font-size: 3em;
     display: none;
+}
+section{
+    min-height: 100vh;
+    padding: 4% 15%;
+}
+#acceuil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: #ffffff;
+}
+#acceuil img{
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 3rem;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+}
+.info-box h1{
+    font-size: 4em;
+    font-weight: 500;
+}
+.info-box h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+.info-box p{
+    opacity: 0.7;
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+.btn-box .btn:nth-of-type(2){
+    background-color: #ffffff;
+    color: var(--background);
+}
+.btn-box .btn:nth-of-type(2):hover{
+    background-color: var(--background);
+    color: #ffffff;
+}
+/*design de la barre de défilement*/
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: var(--background);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #686868, #ffffff);
+}
+
+/*design de la frise chronologique*/
+#apropos{
+    background: url("../images/background.jpg") center / cover no-repeat;
+    background-size: cover;
+}
+.timeline-section{
+    min-height: 100vh;
+    padding: 100px 15px;
+}
+.timeline-items{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #ffffff;
+    left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100px;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: #686868;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 6px 0 15px;
+}
+.timeline-content{
+    background-color: rgba(190, 190, 190, 0.25);
 }
