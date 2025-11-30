@@ -40,6 +40,7 @@ ul{
     display: flex;
     align-items: center;
     gap: 3em; /* Espacement entre les liens */
+    font-size: 1.3em;
 }
 
 /* Liens de navigation */
@@ -134,12 +135,21 @@ section{
 }
 .info-box p{
     opacity: 0.7; /* Texte légèrement transparent */
+    font-size: 1.3em;
 }
 
 /* Boutons accueil */
 .btn-box{
     display: flex;
     gap: 1em;
+}
+.btn-box .btn:nth-of-type(1){
+    background-color: var(--background);
+    color: #ffffff;
+}
+.btn-box .btn:nth-of-type(1):hover{
+    background-color: #ffffff;
+    color: var(--background);
 }
 .btn-box .btn:nth-of-type(2){
     background-color: #ffffff;
@@ -183,6 +193,7 @@ section{
 .propos-box p{
     color: #ffffff;
     opacity: 0.8;
+    font-size: 1.3em;
 }
 
 /* Liste des compétences */
@@ -250,7 +261,7 @@ section{
 }
 .box p{
     opacity: 0.8;
-    word-wrap: break-word;
+    font-size: 1.3em;
 }
 .box h1{
     font-size: 2em;
@@ -271,7 +282,7 @@ form{
     justify-content: center;
     gap: 2em;
 }
-form .entrer-box{
+.entrer-box{
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -331,4 +342,152 @@ form input:focus{
     text-align: center;
     font-size: 16px;
     color: #ffffff;
+}
+
+/*Responsive design*/
+/*Téléphone*/
+@media (max-width: 576px){
+    nav{
+        padding: 1em 5%;
+    }
+    nav ul{
+        display: none; /* cacher les liens */
+    }
+
+    #acceuil img{
+        width: 60%; /* image plus grande */
+    }
+    .info-box h1{
+        font-size: 2em;
+    }
+    .info-box h3{
+        font-size: 1.2em;
+    }
+
+    #propos{
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+    }
+    #propos img{
+        display: none;
+    }
+    .propos-info{
+        text-align: center;
+    }
+    .propos-box h1, h2{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .compts{
+        flex-direction: row;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .header{
+        font-size: 3em;
+    }
+    form input{
+        padding: 1em 2em;
+        width: 100%;
+    }
+}
+
+/*Tablette standard et large*/
+@media (min-width: 577px) and (max-width: 768px){
+    nav{
+        padding: 1.5em 10%;
+    }
+        nav ul{
+        display: none; /* cacher les liens */
+    }
+
+    #acceuil img{    
+        width: 40%;
+    }
+    .info-box h1{
+        font-size: 3em;
+    }
+    .info-box h3{
+        font-size: 1.5em;
+    }
+
+    #propos{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #propos img{
+        display: none;
+    }
+    .propos-info{
+        text-align: center;
+    }
+    .propos-box h1, h2{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .compts{
+        flex-direction: row;
+        gap: 3em;
+        align-items: center;
+        padding: 17%;
+    }
+    .serv-cont{
+        flex-direction: column;
+        padding: 3%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    nav{
+        justify-content: center;
+        padding: 3%;
+        gap: 3em;
+    }
+    nav ul{
+        font-size: 1.2em;
+    }
+    .logo {
+        display: none;
+    }
+
+    #acceuil img{
+        width: 25%;
+    }
+    .info-box h1{
+        font-size: 3.5em;
+    }
+
+    #propos{
+        gap: 3em;
+    }
+    .compts{
+        gap: 5em;
+    }
+    .serv-cont{
+        flex-direction: column;
+        padding: 12%;
+    }
+}
+
+/*PC standard et large*/
+@media (min-width: 993px) and (max-width: 1200px){
+    nav{
+        justify-content: center;
+        padding: 2.5%;
+        gap: 3em;
+    }
+    .info-box h1{
+        font-size: 4em;
+    }
+    .propos-box h1{
+        font-size: 4.5em;
+    }
+}
+
+@media (min-width: 1201px){
+    section{
+        padding: 4% 15%;
+    }
 }
