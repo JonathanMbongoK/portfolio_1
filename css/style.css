@@ -1,45 +1,58 @@
+/* Réinitialisation des styles par défaut et configuration globale */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-    font-family: 'poppins';
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espacements internes par défaut */
+    box-sizing: border-box; /* Inclut les bordures et paddings dans la taille totale */
+    text-decoration: none; /* Supprime les soulignements des liens */
+    list-style: none; /* Supprime les puces des listes */
+    scroll-behavior: smooth; /* Défilement fluide */
+    font-family: 'poppins'; /* Police principale */
 }
+
+/* Variables CSS pour les couleurs */
 :root{
-    --background: rgb(24,24,24);
-    --second-background: rgb(21,21,21);
+    --background: rgb(24,24,24); /* Couleur principale du fond */
+    --second-background: rgb(20,20,20); /* Couleur secondaire du fond */
 }
+
+/* Style général du body */
 body{
-    min-height: 100vh;
-    background: var(--background);
+    min-height: 100vh; /* Hauteur minimale = hauteur de la fenêtre */
+    background: var(--background); /* Applique la couleur de fond */
 }
+
+/* Barre de navigation */
 nav{
-    position: fixed;
+    position: fixed; /* Fixée en haut de la page */
     top: 0;
     width: 100%;
-    padding: 2em 15%;
-    display: flex;
+    padding: 2em 15%; /* Espacement interne */
+    display: flex; /* Flexbox pour aligner les éléments */
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(15, 15, 15, 0.8);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
+    background-color: rgba(15, 15, 15, 0.8); /* Fond semi-transparent */
+    backdrop-filter: blur(10px); /* Effet de flou derrière */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
 }
+
+/* Liste des liens dans la nav */
 ul{
     display: flex;
     align-items: center;
-    gap: 3em;
+    gap: 3em; /* Espacement entre les liens */
 }
+
+/* Liens de navigation */
 nav ul a{
     color: white;
-    opacity: 0.7;
-    transition: 0.2s ease-in-out;
+    opacity: 0.7; /* Transparence initiale */
+    transition: 0.2s ease-in-out; /* Animation fluide */
 }
 nav ul a:hover{
-    opacity: 1;
+    opacity: 1; /* Devient opaque au survol */
 }
+
+/* Logo */
 .logo{
     font-size: 2em;
     color: white;
@@ -48,8 +61,10 @@ nav ul a:hover{
     transition: 0.2s ease-in-out;
 }
 .logo:hover{
-    opacity: 1;
+    opacity: 1; /* Accentuation au survol */
 }
+
+/* Boutons génériques */
 .btn{
     padding: 0.5em 1em;
     color: white;
@@ -63,22 +78,30 @@ nav ul a:hover{
 }
 .btn:hover{
     background-color: white;
-    color: var(--background);
+    color: var(--background); /* Inversion des couleurs au survol */
 }
+
+/* Texte avec effet dégradé */
 span{
     background: linear-gradient(to right, #686868, #ffffff);
     background-clip: text;
     color: transparent;
 }
+
+/* Icône menu (mobile) */
 #menu{
     color: white;
     font-size: 3em;
-    display: none;
+    display: none; /* Caché par défaut */
 }
+
+/* Sections générales */
 section{
     min-height: 100vh;
-    padding: 4% 15%;
+    padding: 4% 15%; /* Espacement interne */
 }
+
+/* Section accueil */
 #acceuil{
     display: flex;
     flex-direction: column;
@@ -89,9 +112,11 @@ section{
 }
 #acceuil img{
     width: 18vw;
-    border-radius: 50%;
+    border-radius: 50%; /* Image ronde */
     margin-top: 3rem;
 }
+
+/* Bloc d’informations accueil */
 .info-box{
     display: flex;
     flex-direction: column;
@@ -108,8 +133,10 @@ section{
     font-weight: 400;
 }
 .info-box p{
-    opacity: 0.7;
+    opacity: 0.7; /* Texte légèrement transparent */
 }
+
+/* Boutons accueil */
 .btn-box{
     display: flex;
     gap: 1em;
@@ -122,7 +149,8 @@ section{
     background-color: var(--background);
     color: #ffffff;
 }
-/*design de la barre de défilement*/
+
+/* Personnalisation de la barre de défilement */
 ::-webkit-scrollbar{
     width: 20px;
     background-color: var(--background);
@@ -131,6 +159,7 @@ section{
     background: linear-gradient(to bottom, #686868, #ffffff);
 }
 
+/* Section À propos */
 #propos{
     background-color: var(--second-background);
     display: flex;
@@ -155,6 +184,8 @@ section{
     color: #ffffff;
     opacity: 0.8;
 }
+
+/* Liste des compétences */
 .compts{
     display: flex;
     text-align: left;
@@ -177,7 +208,7 @@ section{
     transition: 0.3s ease-in-out;
 }
 .compts ul li span:hover{
-    transform: translateX(10px);
+    transform: translateX(10px); /* Décalage au survol */
 }
 .compts ul li i{
     font-size: 1.2em;
@@ -185,6 +216,8 @@ section{
 .propos-box h2{
     font-size: 2.5em;
 }
+
+/* Section Services */
 #services{
     background-color: var(--background);
 }
@@ -195,7 +228,7 @@ section{
 }
 .serv-cont{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grille responsive */
     gap: 2rem;
 }
 .box{
@@ -213,7 +246,7 @@ section{
     transition: 0.3s ease-in-out;
 }
 .box:hover{
-    border: 3px solid rgb(100, 100, 100);
+    border: 3px solid rgb(100, 100, 100); /* Changement de bordure au survol */
 }
 .box p{
     opacity: 0.8;
@@ -226,6 +259,8 @@ section{
     min-width: 25px;
     border-radius: 0.5em;
 }
+
+/* Section Contact */
 #contact{
     background-color: var(--second-background);
 }
@@ -253,8 +288,10 @@ form input{
     outline: none;
 }
 form input:focus{
-    background: rgb(229, 229, 229);
+    background: rgb(229, 229, 229); /* Changement de couleur au focus */
 }
+
+/* Footer */
 .footer{
     display: flex;
     flex-direction: column;
@@ -285,7 +322,7 @@ form input:focus{
     transition: 0.3s ease-in-out;
 }
 .footer .social-icons a:hover{
-    transform: scale(1.2) translateY(-10px);
+    transform: scale(1.2) translateY(-10px); /* Zoom + décalage */
     background-color: var(--second-background);
     color: #ffffff;
     box-shadow: 0 0 10px #ffffff;
