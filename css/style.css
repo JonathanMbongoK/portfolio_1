@@ -392,6 +392,10 @@ box-shadow: 0 0 10px #ffffff;
 /*Responsive design*/
 /*Téléphone*/
 @media (max-width: 576px){
+    body {
+        overflow-x: hidden;/* empêche la page de deborder horizontalement */
+    }
+
     nav{
         padding: 1em 5%;
     }
@@ -437,10 +441,19 @@ box-shadow: 0 0 10px #ffffff;
         padding: 1em 2em;
         width: 100%;
     }
+    .footer p{
+        overflow-x: hidden;
+    }
+    .footer-container{
+        display: none;
+    }
 }
 
 /*Tablette standard et large*/
 @media (min-width: 577px) and (max-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
     nav{
         padding: 1.5em 10%;
     }
@@ -480,11 +493,16 @@ box-shadow: 0 0 10px #ffffff;
     }
     .serv-cont{
         flex-direction: column;
-        padding: 3%;
+    }
+    .footer p{
+        overflow-x: hidden;
     }
 }
 
 @media (min-width: 769px) and (max-width: 992px){
+    body {
+        overflow-x: hidden;
+    }
     nav{
         justify-content: center;
         padding: 3%;
@@ -513,6 +531,9 @@ box-shadow: 0 0 10px #ffffff;
     .serv-cont{
         flex-direction: column;
         padding: 12%;
+    }
+    .footer p{
+        overflow-x: hidden;
     }
 }
 
