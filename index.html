@@ -20,11 +20,11 @@
             <a href="#acceuil">Acceuil</a>
             <a href="#propos">À propos</a>
             <a href="#services">Compétences</a>
-            <a href="#footer">Coordonnées</a>
+            <a href="#contact">Contact</a>
         </ul>
 
         <!-- Bouton de contact -->
-        <a href="#contact" class="btn">Me contacter</a>
+        <a href="#footer" class="btn">Me contacter</a>
     </nav>
 
     <!-- Section accueil -->
@@ -114,24 +114,24 @@
     <section id="contact">
         <h1 class="header"><span>Contact</span></h1>
 
-        <form action="#" method="post">
+        <form action="https://formspree.io/f/xkgdjrvn" method="POST">
 
             <!-- Champ Nom -->
             <div class="entrer-box">
                 <span>Nom complet</span>
-                <input type="text" placeholder="Entrez votre nom complet">
+                <input type="text" name="name" placeholder="Entrez votre nom complet" required>
             </div>
 
             <!-- Champ Email -->
             <div class="entrer-box">
                 <span>Ton Email</span>
-                <input type="text" placeholder="Entrez votre Email">
+                <input type="email" name="email" placeholder="Entrez votre Email" required>
             </div>
 
             <!-- Champ Message -->
             <div class="entrer-box">
                 <span>Message</span>
-                <input type="text" placeholder="Entrez votre message">
+                <input type="text" name="message" placeholder="Entrez votre message">
             </div>
 
             <!-- Boutons du formulaire -->
@@ -139,27 +139,65 @@
                 <button type="submit" class="btn">Envoyer</button>
                 <button type="reset" class="btn">Supprimer</button>
             </div>
+
         </form>
+
     </section>
 
     <!-- Pied de page -->
     <footer id="footer" class="footer">
-        <div class="footer-content">
 
-            <!-- Icônes sociales -->
-            <div class="social-icons">
-                <a href="https://wa.me/33613098335?text=Bonjour%20!"><i class="bx bxl-whatsapp"></i></a>
-                <a href="https://www.instagram.com/j._.joestar/"><i class="bx bxl-instagram"></i></a>
-                <a href="https://github.com/JonathanMbongoK/portfolio_1"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/jonathan-mbongo/"><i class="bx bxl-linkedin"></i></a>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Jonathan Mbongo</h3>
+                <p>Développeur Web — Portfolio 2025</p>
             </div>
 
-            <!-- Copyright -->
-            <div>
-                <p class="copyright">© 2025 Jonathan Mbongo | Tous droits réservés.</p>
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <div class="liens">
+                    <a href="#acceuil">Accueil</a>
+                    <a href="#propos">À propos</a>
+                    <a href="#services">Compétences</a>
+                </div>
+                
             </div>
+
+            <div class="footer-column">
+                <h4>Ressources</h4>
+                <div class="liens">
+                    <a href="#">CV (PDF)</a>
+                    <a href="#">À propos</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+                
+            </div>
+
+
+            <div class="footer-column">
+                <h4>Me contacter</h4>
+                <div class="liens">
+                    <a href="mailto:jmbongo33@gmail.com">Email</a></li>
+                    <a href="https://wa.me/33613098335">WhatsApp</a></li>
+                    <a href="https://www.linkedin.com/in/jonathan-mbongo/">LinkedIn</a></li>
+                </div>
+            </div>
+
         </div>
+
+        <p>__________________________________________________________________________________________________________</p>
+
+        <div class="social-icons">
+            <a href="https://wa.me/33613098335"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://www.instagram.com/j._.joestar/"><i class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/JonathanMbongoK"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-mbongo/"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+        <p class="copyright">© 2025 Jonathan Mbongo — Tous droits réservés.</p>
     </footer>
+
 
     <script src="js/script.js"></script>
 </body>
