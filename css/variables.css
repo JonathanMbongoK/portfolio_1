@@ -1,0 +1,102 @@
+:root {
+    /* Couleurs principales */
+    --background: rgb(24, 24, 24);          /* Fond global */
+    --second-background: rgb(20, 20, 20);   /* Fond secondaire (sections) */
+    --third-background: rgb(46, 46, 46);    /* Fond alternatif (parcours, etc.) */
+
+    /* Couleurs texte */
+    --text-main: #ffffff;                   /* Texte principal */
+    --text-opacity: 0.7;                    /* Transparence légère */
+    --text-opacity-strong: 0.8;             /* Transparence plus marquée */
+
+    /* Accents */
+    --accent-1: #686868;                    /* Gris accent (hover, scrollbar) */
+    --accent-2: #ffffff;                    /* Accent clair (contraste) */
+    --accent-success: green;                /* Accent succès (points, validation) */
+
+    /* Bordures / radius */
+    --radius-small: 0.5em;                  /* Petits arrondis (boutons, images) */
+    --radius-medium: 1em;                   /* Arrondis plus larges (cards, blocs) */
+
+    /* Ombres */
+    --shadow-default: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombre standard */
+
+    /* Polices */
+    --font-family: 'Poppins', sans-serif;
+
+    /* Tailles de police */
+    --font-size-small: 1.1em;               /* Boutons, petits textes */
+    --font-size-base: 1.3em;                /* Texte courant */
+    --font-size-medium: 2em;                /* Sous-titres */
+    --font-size-large: 4em;                 /* Titres principaux */
+    --font-size-big-title: 5em;             /* Très grands titres */
+
+    /* Espacements */
+    --padding-section: 4% 15%;              /* Padding global des sections */
+    --padding-nav: 2em 15%;                 /* Padding de la navigation */
+    --gap-small: 0.5em;                     /* Petits espacements */
+    --gap-medium: 1em;                      /* Espacements moyens */
+    --gap-large: 2em;                       /* Espacements larges */
+    --gap-xl: 5em;                          /* Espacements très larges */
+
+    /* Bordures */
+    --border-color: rgb(49, 49, 49);        /* Bordure par défaut */
+    --border-color-hover: rgb(100, 100, 100); /* Bordure au survol */
+
+    /* Transitions */
+    --transition-fast: 0.2s ease-in-out;    /* Transition rapide */
+    --transition-medium: 0.3s ease-in-out;  /* Transition standard */
+}
+
+:root {
+    /* Palette minimaliste inspirée de ton image */
+    --background: #F0F0F0;            /* Fond très clair */
+    --second-background: #DCDCDC;     /* Gris doux */
+    --third-background: #C8C8C8;      /* Gris moyen */
+    --fourth-background: rgba(#5e5e5e, #5d5d5d, #5d5d5d, 0.8);     /* Gris plus marqué */
+
+    /* Texte */
+    --text-main: #202020;             /* Noir doux, pas un noir pur */
+    --text-opacity: 0.75;
+    --text-opacity-strong: 0.9;
+
+    /* Accents */
+    --accent-1: #202020;              /* Gris métal (borders, hover) */
+    --accent-2: #202020;              /* Texte fort */
+    --accent-success: #DCDCDC;
+
+    /* Bordures */
+    --border-color: #C8C8C8;
+    --border-color-hover: #A0A0A0;
+
+    /* Ombres (subtiles, premium) */
+    --shadow-default: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    /* Police */
+    --font-family: 'Poppins', sans-serif;
+
+    /* Tailles (inchangées) */
+    --font-size-small: 1.1em;
+    --font-size-base: 1.3em;
+    --font-size-medium: 2em;
+    --font-size-large: 4em;
+    --font-size-big-title: 5em;
+
+    /* Radius */
+    --radius-small: 0.5em;
+    --radius-medium: 1em;
+
+    /* Espacements */
+    --padding-section: 4% 15%;
+    --padding-nav: 2em 15%;
+    --gap-small: 0.5em;
+    --gap-medium: 1em;
+    --gap-large: 2em;
+    --gap-xl: 5em;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-medium: 0.3s ease-in-out;
+}
+
+
